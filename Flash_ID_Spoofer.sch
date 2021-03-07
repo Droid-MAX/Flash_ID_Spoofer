@@ -1,0 +1,355 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Flash ID Spoofer"
+Date "2021-03-07"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_Flash:W25Q128JVS J1
+U 1 1 6045B8D9
+P 7100 4020
+F 0 "J1" H 6800 4420 50  0000 C CNN
+F 1 "SOIC8-PAD" H 7450 3620 50  0000 C CNN
+F 2 "Package_SO_Custom:SOIC-8-PAD_5.23x5.23mm_P1.27mm" H 7100 4020 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf" H 7100 4020 50  0001 C CNN
+	1    7100 4020
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_Flash:W25Q128JVS U2
+U 1 1 6045C85F
+P 7100 2720
+F 0 "U2" H 6800 3120 50  0000 C CNN
+F 1 "W25Q128JVS" H 7450 2320 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 7100 2720 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf" H 7100 2720 50  0001 C CNN
+	1    7100 2720
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 6045FF8C
+P 2740 3540
+F 0 "#PWR0101" H 2740 3390 50  0001 C CNN
+F 1 "VCC" H 2755 3713 50  0000 C CNN
+F 2 "" H 2740 3540 50  0001 C CNN
+F 3 "" H 2740 3540 50  0001 C CNN
+	1    2740 3540
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60460BF1
+P 2750 4320
+F 0 "#PWR0102" H 2750 4070 50  0001 C CNN
+F 1 "GND" H 2755 4147 50  0000 C CNN
+F 2 "" H 2750 4320 50  0001 C CNN
+F 3 "" H 2750 4320 50  0001 C CNN
+	1    2750 4320
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6046115C
+P 2740 3540
+F 0 "#FLG0101" H 2740 3615 50  0001 C CNN
+F 1 "PWR_FLAG" H 2740 3713 50  0000 C CNN
+F 2 "" H 2740 3540 50  0001 C CNN
+F 3 "~" H 2740 3540 50  0001 C CNN
+	1    2740 3540
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6046179D
+P 2750 4320
+F 0 "#FLG0102" H 2750 4395 50  0001 C CNN
+F 1 "PWR_FLAG" H 2750 4493 50  0000 C CNN
+F 2 "" H 2750 4320 50  0001 C CNN
+F 3 "~" H 2750 4320 50  0001 C CNN
+	1    2750 4320
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0103
+U 1 1 60463198
+P 4360 2290
+F 0 "#PWR0103" H 4360 2140 50  0001 C CNN
+F 1 "VCC" H 4375 2463 50  0000 C CNN
+F 2 "" H 4360 2290 50  0001 C CNN
+F 3 "" H 4360 2290 50  0001 C CNN
+	1    4360 2290
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 60463DB5
+P 4360 5620
+F 0 "#PWR0104" H 4360 5370 50  0001 C CNN
+F 1 "GND" H 4365 5447 50  0000 C CNN
+F 2 "" H 4360 5620 50  0001 C CNN
+F 3 "" H 4360 5620 50  0001 C CNN
+	1    4360 5620
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0105
+U 1 1 6046967A
+P 7100 2320
+F 0 "#PWR0105" H 7100 2170 50  0001 C CNN
+F 1 "VCC" H 7115 2493 50  0000 C CNN
+F 2 "" H 7100 2320 50  0001 C CNN
+F 3 "" H 7100 2320 50  0001 C CNN
+	1    7100 2320
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0106
+U 1 1 6046A8FA
+P 7100 3620
+F 0 "#PWR0106" H 7100 3470 50  0001 C CNN
+F 1 "VCC" H 7115 3793 50  0000 C CNN
+F 2 "" H 7100 3620 50  0001 C CNN
+F 3 "" H 7100 3620 50  0001 C CNN
+	1    7100 3620
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 6046B47E
+P 7100 3120
+F 0 "#PWR0107" H 7100 2870 50  0001 C CNN
+F 1 "GND" H 7105 2947 50  0000 C CNN
+F 2 "" H 7100 3120 50  0001 C CNN
+F 3 "" H 7100 3120 50  0001 C CNN
+	1    7100 3120
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 6046D998
+P 7100 4420
+F 0 "#PWR0108" H 7100 4170 50  0001 C CNN
+F 1 "GND" H 7105 4247 50  0000 C CNN
+F 2 "" H 7100 4420 50  0001 C CNN
+F 3 "" H 7100 4420 50  0001 C CNN
+	1    7100 4420
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3760 4010 3530 4010
+Wire Wire Line
+	3760 4110 3530 4110
+Text Label 3530 4010 0    50   ~ 0
+CS
+Text Label 3530 4110 0    50   ~ 0
+SCLK
+Text Label 5460 4910 2    50   ~ 0
+FROM_CPU
+Text Label 5460 5010 2    50   ~ 0
+TO_CPU
+Text Label 5460 5110 2    50   ~ 0
+FROM_FLASH
+Wire Wire Line
+	4960 5110 5460 5110
+Wire Wire Line
+	4960 5010 5460 5010
+Wire Wire Line
+	4960 4910 5460 4910
+Wire Wire Line
+	6600 2620 6090 2620
+Wire Wire Line
+	6600 2820 6090 2820
+Wire Wire Line
+	7600 2520 8100 2520
+Wire Wire Line
+	7600 2620 8100 2620
+Wire Wire Line
+	7600 2820 8100 2820
+Wire Wire Line
+	7600 2920 8100 2920
+Wire Wire Line
+	6600 3920 6090 3920
+Wire Wire Line
+	6600 4120 6090 4120
+Wire Wire Line
+	7600 3820 8100 3820
+Wire Wire Line
+	7600 3920 8100 3920
+Wire Wire Line
+	7600 4120 8100 4120
+Wire Wire Line
+	7600 4220 8100 4220
+Text Label 6090 2620 0    50   ~ 0
+CS
+Text Label 6090 2820 0    50   ~ 0
+SCLK
+Text Label 8100 2520 2    50   ~ 0
+FROM_CPU
+Text Label 8100 2620 2    50   ~ 0
+FROM_FLASH
+Text Label 8100 2820 2    50   ~ 0
+WP
+Text Label 8100 2920 2    50   ~ 0
+HOLD
+Text Label 6090 3920 0    50   ~ 0
+CS
+Text Label 6090 4120 0    50   ~ 0
+SCLK
+Text Label 8100 3820 2    50   ~ 0
+FROM_CPU
+Text Label 8100 4120 2    50   ~ 0
+WP
+Text Label 8100 4220 2    50   ~ 0
+HOLD
+Text Label 8100 3920 2    50   ~ 0
+TO_CPU
+NoConn ~ 3760 3810
+NoConn ~ 3760 3910
+NoConn ~ 4960 2610
+NoConn ~ 4960 2710
+NoConn ~ 4960 2810
+NoConn ~ 4960 2910
+NoConn ~ 4960 3110
+NoConn ~ 4960 3210
+NoConn ~ 4960 3310
+NoConn ~ 4960 3410
+NoConn ~ 4960 3510
+NoConn ~ 4960 3610
+NoConn ~ 4960 3720
+NoConn ~ 4960 3820
+NoConn ~ 4960 3920
+NoConn ~ 4960 4020
+NoConn ~ 4960 4120
+NoConn ~ 4960 4220
+NoConn ~ 4960 4310
+NoConn ~ 4960 4510
+NoConn ~ 4960 4610
+NoConn ~ 4960 4710
+NoConn ~ 4960 5210
+NoConn ~ 4960 5310
+NoConn ~ 4960 5410
+$Comp
+L Connector_Generic:Conn_01x06 J2
+U 1 1 604AF206
+P 7330 5120
+F 0 "J2" H 7410 5112 50  0000 L CNN
+F 1 "Conn_01x06" H 7410 5021 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Vertical" H 7330 5120 50  0001 C CNN
+F 3 "~" H 7330 5120 50  0001 C CNN
+	1    7330 5120
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4960 4810 5460 4810
+Wire Wire Line
+	4960 4410 5460 4410
+Wire Wire Line
+	4960 3010 5460 3010
+Wire Wire Line
+	4960 2510 5460 2510
+Text Label 5460 2510 2    50   ~ 0
+TDI
+Text Label 5460 3010 2    50   ~ 0
+TMS
+Text Label 5460 4410 2    50   ~ 0
+TCK
+Text Label 5460 4810 2    50   ~ 0
+TDO
+Text Label 6860 4920 0    50   ~ 0
+TCK
+Text Label 6860 5020 0    50   ~ 0
+TDO
+Text Label 6860 5120 0    50   ~ 0
+TDI
+Text Label 6860 5220 0    50   ~ 0
+TMS
+Text Label 6860 5320 0    50   ~ 0
+VCC
+Text Label 6860 5420 0    50   ~ 0
+GND
+Wire Wire Line
+	7130 4920 6860 4920
+Wire Wire Line
+	7130 5020 6860 5020
+Wire Wire Line
+	7130 5120 6860 5120
+Wire Wire Line
+	7130 5220 6860 5220
+Wire Wire Line
+	7130 5320 6860 5320
+Wire Wire Line
+	7130 5420 6860 5420
+$Comp
+L CPLD_Altera_Custom:EPM3032ATC44-10_TQFP-44 U1
+U 1 1 604D86E6
+P 4380 3910
+F 0 "U1" H 3940 5450 50  0000 C CNN
+F 1 "EPM3032ATC44-10_TQFP-44" V 3770 4800 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" V 4360 3860 50  0001 C CNN
+F 3 "" H 4360 3860 50  0001 C CNN
+	1    4380 3910
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4210 2350 4210 2320
+Wire Wire Line
+	4310 2350 4310 2320
+Wire Wire Line
+	4410 2350 4410 2320
+Wire Wire Line
+	4510 2350 4510 2320
+Wire Wire Line
+	4210 2320 4310 2320
+Connection ~ 4310 2320
+Wire Wire Line
+	4310 2320 4360 2320
+Connection ~ 4410 2320
+Wire Wire Line
+	4410 2320 4510 2320
+Wire Wire Line
+	4360 2290 4360 2320
+Connection ~ 4360 2320
+Wire Wire Line
+	4360 2320 4410 2320
+Wire Wire Line
+	4110 5560 4110 5590
+Wire Wire Line
+	4210 5560 4210 5590
+Wire Wire Line
+	4310 5560 4310 5590
+Wire Wire Line
+	4410 5560 4410 5590
+Wire Wire Line
+	4510 5560 4510 5590
+Wire Wire Line
+	4610 5560 4610 5590
+Wire Wire Line
+	4110 5590 4210 5590
+Connection ~ 4210 5590
+Wire Wire Line
+	4210 5590 4310 5590
+Connection ~ 4310 5590
+Wire Wire Line
+	4310 5590 4360 5590
+Connection ~ 4410 5590
+Wire Wire Line
+	4410 5590 4510 5590
+Connection ~ 4510 5590
+Wire Wire Line
+	4510 5590 4610 5590
+Wire Wire Line
+	4360 5620 4360 5590
+Connection ~ 4360 5590
+Wire Wire Line
+	4360 5590 4410 5590
+$EndSCHEMATC
